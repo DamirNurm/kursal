@@ -1,0 +1,14 @@
+=======================
+TOTAL AREA: 0.9
+FREE AREA: 0.82
+Amount of objects: 2
+=======================
+Number Object: 1
+Width: 0.3
+Length: 0.2
+Occupies area: 0.060000002
+=======================
+Number Object: 2
+Width: 1.0
+Length: 0.02
+Occupies area: 0.02
