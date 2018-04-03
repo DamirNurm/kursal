@@ -93,7 +93,6 @@ public class Main4 {
 		button.setBounds(208, 279, 170, 36);
 		frame.getContentPane().add(button);
 		
-		//int j = MainProject.AmountObj.amount;
 		textField_1.setText(String.valueOf(MainProject.AmountObj.amount));
 		textField_2.setText(String.valueOf(MainProject.place.freearea));
 		textField.setText(String.valueOf(MainProject.place.totalarea));
