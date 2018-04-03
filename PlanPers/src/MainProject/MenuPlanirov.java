@@ -13,12 +13,12 @@ public class MenuPlanirov {
 
 	JFrame frame;
 	public static JTextField textField;
-	public static JLabel lblNewLabel_1;
+	private static JLabel lblNewLabel_1;
 	public static JTextField textField_1;
 	public static JTextField textField_2;
-	public static JLabel lblNewLabel_2;
-	public static JButton btnNewButton_3;
-	public static JButton btnNewButton_4;
+	private static JLabel lblNewLabel_2;
+	private static JButton btnNewButton_3;
+	private static JButton btnNewButton_4;
 	public static JTextField textField_3;
 	public static JTextField textField_4;
 

@@ -7,15 +7,19 @@ public class Objects {
 	public  float width = 0;
 	public  float length = 0;
 	public   float area = 0;
+	/**
+	* Объявляем массив статических перенных для хранения параметров объекта
+	 */
 	public static   Objects[] Obj = new Objects[100];
 	
+	/**
+	* Объявляем статический метод для сохранения значений параметров объекта
+	 */
 	public static void AddValueForObject() {
 		try {
 		if (MenuPlanirov.textField_1.getText().length() != 0 && MenuPlanirov.textField_2.getText().length() != 0 && !MenuPlanirov.textField_2.getText().equals("0") && !MenuPlanirov.textField_1.getText().equals("0")) {
 			AmountObj.amount += 1;
 			Obj[AmountObj.amount] = new Objects();
-			System.out.println(MenuPlanirov.textField_1.getText());
-			System.out.println(MenuPlanirov.textField_2.getText());
 			Obj[AmountObj.amount].width = Float.parseFloat(MenuPlanirov.textField_1.getText());
 			Obj[AmountObj.amount].length = Float.parseFloat(MenuPlanirov.textField_2.getText());
 			Obj[AmountObj.amount].objNumbet = AmountObj.amount;

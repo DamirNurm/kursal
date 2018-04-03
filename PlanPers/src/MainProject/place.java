@@ -16,7 +16,6 @@ public class place extends Objects{
 			if(freearea<0)
 				freearea=0;
 			MenuPlanirov.textField_3.setText(String.valueOf(MainProject.place.freearea));
-			System.out.println("dsad");
 	}catch (Exception ep) {JOptionPane.showMessageDialog(null, "Ошибка во время расчётов! \nЗначение площади комнаты заполнено неверно!");}
 	}
 	public static void SetTotalArea() {
