@@ -32,11 +32,11 @@ public class Main3 {
 	 */
 	public Main3() {
 		initialize();
-		Main2 window2 = new Main2();
+		MenuPlanirov window2 = new MenuPlanirov();
 		window2.frame.setVisible(false);
 	}
 	public void Main2Vis() {
-		Main2 window2 = new Main2();
+		MenuPlanirov window2 = new MenuPlanirov();
 		window2.frame.setVisible(false);
 	}
 	public void Main2Vis3() {
@@ -66,7 +66,7 @@ public class Main3 {
 		btnNewButton.addActionListener(new ActionListener() {
 		     public void actionPerformed(ActionEvent e) {
 		    	 frame.setVisible(false);
-		    	 MainProject.Main2.main(null);
+		    	 MainProject.MenuPlanirov.main(null);
 		     }
 		});
 		

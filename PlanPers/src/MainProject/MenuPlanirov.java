@@ -9,7 +9,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Main2 {
+public class MenuPlanirov {
 
 	JFrame frame;
 	public static JTextField textField;
@@ -29,7 +29,7 @@ public class Main2 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main2 window = new Main2();
+					MenuPlanirov window = new MenuPlanirov();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class Main2 {
 	/**
 	 * Create the application.
 	 */
-	public Main2() {
+	public MenuPlanirov() {
 		initialize();
 	}
 

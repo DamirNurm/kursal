@@ -11,17 +11,17 @@ public class Objects {
 	
 	public static void AddValueForObject() {
 		try {
-		if (Main2.textField_1.getText().length() != 0 && Main2.textField_2.getText().length() != 0 && !Main2.textField_2.getText().equals("0") && !Main2.textField_1.getText().equals("0")) {
+		if (MenuPlanirov.textField_1.getText().length() != 0 && MenuPlanirov.textField_2.getText().length() != 0 && !MenuPlanirov.textField_2.getText().equals("0") && !MenuPlanirov.textField_1.getText().equals("0")) {
 			AmountObj.amount += 1;
 			Obj[AmountObj.amount] = new Objects();
-			System.out.println(Main2.textField_1.getText());
-			System.out.println(Main2.textField_2.getText());
-			Obj[AmountObj.amount].width = Float.parseFloat(Main2.textField_1.getText());
-			Obj[AmountObj.amount].length = Float.parseFloat(Main2.textField_2.getText());
+			System.out.println(MenuPlanirov.textField_1.getText());
+			System.out.println(MenuPlanirov.textField_2.getText());
+			Obj[AmountObj.amount].width = Float.parseFloat(MenuPlanirov.textField_1.getText());
+			Obj[AmountObj.amount].length = Float.parseFloat(MenuPlanirov.textField_2.getText());
 			Obj[AmountObj.amount].objNumbet = AmountObj.amount;
-			Obj[AmountObj.amount].area = Float.parseFloat(Main2.textField_1.getText())* Float.parseFloat(Main2.textField_2.getText());
-			Main2.textField_1.setText("");
-			Main2.textField_2.setText("");
+			Obj[AmountObj.amount].area = Float.parseFloat(MenuPlanirov.textField_1.getText())* Float.parseFloat(MenuPlanirov.textField_2.getText());
+			MenuPlanirov.textField_1.setText("");
+			MenuPlanirov.textField_2.setText("");
 			FillTextF4();
 		}else {
 			FillTextF4();
@@ -35,7 +35,7 @@ public class Objects {
 		
 		}
 	public static void FillTextF4() {
-		Main2.textField_4.setText(String.valueOf(AmountObj.amount));
+		MenuPlanirov.textField_4.setText(String.valueOf(AmountObj.amount));
 	}
 
 }
