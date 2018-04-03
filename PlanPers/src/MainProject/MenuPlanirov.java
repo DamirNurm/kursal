@@ -144,7 +144,7 @@ public class MenuPlanirov {
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.setVisible(false);
-				MainProject.Main3.main(null);
+				MainProject.MainMenu.main(null);
 
 			}
 		});

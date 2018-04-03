@@ -100,7 +100,7 @@ public class Main4 {
 		button.addActionListener(new ActionListener() {
 		     public void actionPerformed(ActionEvent e) {
 		    	 frame.setVisible(false);
-		    	 MainProject.Main3.main(null);
+		    	 MainProject.MainMenu.main(null);
 		     }
 		});
 		btnNewButton.addActionListener(new ActionListener() {

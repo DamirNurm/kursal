@@ -7,7 +7,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main3 {
+public class MainMenu {
 
 	private JFrame frame;
 	/**
@@ -17,7 +17,7 @@ public class Main3 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main3 window = new Main3();
+					MainMenu window = new MainMenu();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,7 +30,7 @@ public class Main3 {
 	/**
 	 * Create the application.
 	 */
-	public Main3() {
+	public MainMenu() {
 		initialize();
 		MenuPlanirov window2 = new MenuPlanirov();
 		window2.frame.setVisible(false);
