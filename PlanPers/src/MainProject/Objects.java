@@ -26,7 +26,8 @@ public class Objects {
 		}else {
 			FillTextF4();
 		}
-	}catch (Exception ep) {JOptionPane.showMessageDialog(null, "Ошибка во время добавления объекта! \nВозможно какие-то поля заполнены неверно!");}
+	}catch (Exception ep) {AmountObj.amount -= 1;
+	JOptionPane.showMessageDialog(null, "Ошибка во время добавления объекта! \nПараметры объекта заполнены неверно!");}
 	}
 	public static void DelValueObjects() {
 		AmountObj.amount=0;
