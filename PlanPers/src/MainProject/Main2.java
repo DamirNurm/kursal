@@ -62,7 +62,7 @@ public class Main2 {
 
 		JLabel lblNewLabel = new JLabel("Введите значение площади комнаты(кв.м)");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel.setBounds(20, 23, 348, 20);
+		lblNewLabel.setBounds(20, 23, 355, 20);
 		frame.getContentPane().add(lblNewLabel);
 
 		lblNewLabel_1 = new JLabel("Значение ширины объекта(м)");
@@ -103,7 +103,7 @@ public class Main2 {
 
 		JLabel lblNewLabel_4 = new JLabel("Свободное место(кв.м): ");
 		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_4.setBounds(30, 410, 170, 20);
+		lblNewLabel_4.setBounds(30, 410, 180, 20);
 		frame.getContentPane().add(lblNewLabel_4);
 
 		JLabel lblNewLabel_5 = new JLabel("Объектов всего:");
@@ -122,7 +122,7 @@ public class Main2 {
 		frame.getContentPane().add(btnNewButton_4);
 
 		textField_3 = new JTextField();
-		textField_3.setBounds(202, 412, 86, 20);
+		textField_3.setBounds(212, 412, 86, 20);
 		frame.getContentPane().add(textField_3);
 		textField_3.setEnabled(false);
 		textField_3.setColumns(10);
