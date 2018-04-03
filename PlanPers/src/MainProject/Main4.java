@@ -52,12 +52,12 @@ public class Main4 {
 		
 		JLabel label = new JLabel("Значение площади помещения(кв.м):");
 		label.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label.setBounds(38, 11, 285, 25);
+		label.setBounds(38, 11, 300, 25);
 		frame.getContentPane().add(label);
 		
 		JLabel lblNewLabel = new JLabel("Количество объектов в комнате(шт):");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setBounds(38, 80, 260, 25);
+		lblNewLabel.setBounds(38, 80, 300, 25);
 		frame.getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
@@ -74,7 +74,7 @@ public class Main4 {
 		
 		JLabel label_1 = new JLabel("Свободного пространства в комнате(кв.м):");
 		label_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label_1.setBounds(38, 147, 306, 25);
+		label_1.setBounds(38, 147, 320, 25);
 		frame.getContentPane().add(label_1);
 		
 		textField_2 = new JTextField();
