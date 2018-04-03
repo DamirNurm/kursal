@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class Main4 {
+public class MenuOtdelochnik {
 
 	private JFrame frame;
 	private JTextField textField;
@@ -24,7 +24,7 @@ public class Main4 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main4 window = new Main4();
+					MenuOtdelochnik window = new MenuOtdelochnik();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +36,7 @@ public class Main4 {
 	/**
 	 * Create the application.
 	 */
-	public Main4() {
+	public MenuOtdelochnik() {
 		initialize();
 	}
 

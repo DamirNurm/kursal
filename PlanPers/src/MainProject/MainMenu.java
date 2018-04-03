@@ -73,7 +73,7 @@ public class MainMenu {
 		button.addActionListener(new ActionListener() {
 		     public void actionPerformed(ActionEvent e) {
 		    	 frame.setVisible(false);
-		    	 MainProject.Main4.main(null);
+		    	 MainProject.MenuOtdelochnik.main(null);
 		    	 
 		    	 
 		     }
