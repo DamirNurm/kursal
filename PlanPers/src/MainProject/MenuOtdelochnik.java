@@ -1,32 +1,77 @@
+/**
+* Устанавливаем принадлежность класса к пакету
+ */
 package MainProject;
-import java.awt.EventQueue;
 
+/**
+ * Подключаем библиотеку для работы с графическим интерфейсом
+ */
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JTextField;
 import javax.swing.JButton;
+/**
+ * Подключаем библиотеку для работы с классами и интерфейсами, касающихся шрифтов.
+ */
+import java.awt.Font;
+/**
+ * Подключаем класс событий
+ */
+import java.awt.event.ActionEvent;
+import java.awt.EventQueue;
+/**
+ * Подключаем класс прослушки
+ */
+import java.awt.event.ActionListener;
 
+/**
+ * Объявляем public класс
+ */
 public class MenuOtdelochnik {
 
+	
 	private JFrame frame;
+	/**
+	 * Объявляем приватные поля ввода
+	 * textField - принимает значение всей площади комнаты (кв.м)
+	 * textField_1 - принимает значение количества объектов (шт.)
+	 * textField_2 - принимает значение Свободного места в комнате (кв.м)
+	 */
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
 
 	/**
-	 * Launch the application.
+	 * Запуск приложения
 	 */
 	public static void main(String[] args) {
+		/**
+		 * Объявляем, что это необходимо выполнять в главном потоке
+		 */
 		EventQueue.invokeLater(new Runnable() {
+			/**
+			 * Метод run
+			 */
 			public void run() {
+				/**
+				 * Выполняем отслеживание блока кода, где может произойти ошибка, при помощи исключения try
+				 */
 				try {
+					/**
+					 * Создаём объект window
+					 */
 					MenuOtdelochnik window = new MenuOtdelochnik();
+					/**
+					 * Отображаем окно
+					 */
 					window.frame.setVisible(true);
+					/**
+					 * Перехватываем исключение catch
+					 */
 				} catch (Exception e) {
+					/**
+					 * Обрабатываем исключение типа Exception e 
+					 */
 					e.printStackTrace();
 				}
 			}
@@ -34,14 +79,17 @@ public class MenuOtdelochnik {
 	}
 
 	/**
-	 * Create the application.
+	 * Создание приложения
 	 */
 	public MenuOtdelochnik() {
+		/**
+		 * Вызываем метод initialize
+		 */
 		initialize();
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Инициализация элементов фрейма
 	 */
 	private void initialize() {
 		frame = new JFrame();
