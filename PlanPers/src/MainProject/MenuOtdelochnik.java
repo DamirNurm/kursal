@@ -66,7 +66,7 @@ public class MenuOtdelochnik {
 					 */
 					window.frame.setVisible(true);
 					/**
-					 * Перехватываем исключение catch
+					 * Исключение catch
 					 */
 				} catch (Exception e) {
 					/**
@@ -87,25 +87,62 @@ public class MenuOtdelochnik {
 		 */
 		initialize();
 	}
-
 	/**
 	 * Инициализация элементов фрейма
 	 */
 	private void initialize() {
+		/**
+		 * Создаём объект
+		 */
 		frame = new JFrame();
+		/**
+		 * Устанавливаем название окна
+		 */
 		frame.setTitle("Отделочник");
+		/**
+		 * Указываем координаты верхней левой вершины окна, а также его ширину и высоту
+		 */
 		frame.setBounds(100, 100, 404, 365);
+		/**
+		 *  Указываем операцию, которая будет произведена при закрытии окна
+		 */
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		/**
+		 *  Устанавлваем менеджер NullLayout для самостоятельного расположения элементов
+		 */
 		frame.getContentPane().setLayout(null);
 		
+		/**
+		 *  Создаём простой компонент label класса JLabel
+		 */
 		JLabel label = new JLabel("Значение площади помещения(кв.м):");
+		/**
+		 *  Задаем у компонента шрифт  
+		 */
 		label.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		/**
+		 *  Задаем у компонента его координаты и размеры
+		 */
 		label.setBounds(38, 11, 300, 25);
+		/**
+		 *  Добавляем компонент label на панель
+		 */
 		frame.getContentPane().add(label);
-		
+		/**
+		 *  Создаём экземляр класса lblNewLabel класса JLabel
+		 */
 		JLabel lblNewLabel = new JLabel("Количество объектов в комнате(шт):");
+		/**
+		 *  Задаем у компонента шрифт  
+		 */
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		/**
+		 *  Задаем у компонента его координаты и размеры
+		 */
 		lblNewLabel.setBounds(38, 80, 300, 25);
+		/**
+		 *  Добавляем компонент label на панель
+		 */
 		frame.getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
@@ -119,7 +156,9 @@ public class MenuOtdelochnik {
 		textField_1.setColumns(10);
 		textField_1.setBounds(38, 116, 155, 20);
 		frame.getContentPane().add(textField_1);
-		
+		/**
+		 *  Создаём экземляр класса label_1 класса JLabel
+		 */
 		JLabel label_1 = new JLabel("Свободного пространства в комнате(кв.м):");
 		label_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		label_1.setBounds(38, 147, 320, 25);
