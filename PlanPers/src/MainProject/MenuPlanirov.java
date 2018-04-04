@@ -357,7 +357,7 @@ public class MenuPlanirov {
 		/**
 		 * Добавляем компонент textField_3 на панель
 		 */
-		//frame.getContentPane().add(textField_3);
+		frame.getContentPane().add(textField_3);
 		/**
 		 * Запрещаем пользователю выделять и изменять содержимое в компоненте
 		 */
