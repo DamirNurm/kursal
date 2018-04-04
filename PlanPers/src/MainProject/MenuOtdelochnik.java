@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 /**
- * Подключаем библиотеку для работы с классами и интерфейсами, касающихся шрифтов.
+ * Подключаем библиотеку для работы с классами и интерфейсами, касающихся шрифтов
  */
 import java.awt.Font;
 /**
@@ -31,16 +31,17 @@ public class MenuOtdelochnik {
 
 	private JFrame frame;
 	/**
-	 * Объявляем приватные поля ввода textField - принимает значение всей площади
-	 * комнаты (кв.м) textField_1 - принимает значение количества объектов (шт.)
-	 * textField_2 - принимает значение Свободного места в комнате (кв.м)
+	 * Объявляем приватные поля ввода JTextField
+	 * textField - Заносится значение всей площади комнаты (кв.м) с формы "Планировщик"
+	 * textField_1 - принимает значение количества объектов (шт.) 
+	 * textField_2 - принимает значение Свободного места в комнате (кв.м) 
 	 */
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
 
 	/**
-	 * Запуск приложения
+	 * Запускаем приложение
 	 */
 	public static void main(String[] args) {
 		/**
@@ -92,7 +93,7 @@ public class MenuOtdelochnik {
 	 */
 	private void initialize() {
 		/**
-		 * Создаём объект
+		 * Создаем frame для формы Отделочник
 		 */
 		frame = new JFrame();
 		/**
@@ -108,7 +109,7 @@ public class MenuOtdelochnik {
 		 */
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		/**
-		 * Устанавлваем менеджер NullLayout для самостоятельного расположения элементов
+		 * Устанавлваем менеджер NullLayout для расположения элементов по координатам
 		 */
 		frame.getContentPane().setLayout(null);
 
@@ -134,7 +135,7 @@ public class MenuOtdelochnik {
 		 */
 		JLabel lblNewLabel = new JLabel("Количество объектов в комнате(шт):");
 		/**
-		 * Задаем у компонента шрифт
+		 * Задаем шрифт компонента
 		 */
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		/**
@@ -147,12 +148,12 @@ public class MenuOtdelochnik {
 		frame.getContentPane().add(lblNewLabel);
 
 		/**
-		 * Создаём простой компонент textField класса JTextField В это поле заносится
-		 * значение общей площади помещения
+		 * Создаём простой компонент textField класса JTextField 
+		 * В это поле заносится значение общей площади помещения
 		 */
 		textField = new JTextField();
 		/**
-		 * Блокируем полностью компонент, не давая ничего выделять и изменять в нём
+		 * Запрещаем пользователю выделять и изменять содержимое в компоненте
 		 */
 		textField.setEnabled(false);
 		/**
@@ -169,12 +170,12 @@ public class MenuOtdelochnik {
 		textField.setColumns(10);
 
 		/**
-		 * Создаём простой компонент textField_1 класса JTextField В это поле заноситься
-		 * количество объектов в комнате
+		 * Создаём простой компонент textField_1 класса JTextField 
+		 * В это поле заноситься количество объектов в комнате
 		 */
 		textField_1 = new JTextField();
 		/**
-		 * Блокируем полностью компонент, не давая ничего выделять и изменять в нём
+		 * Запрещаем пользователю выделять и изменять содержимое в компоненте
 		 */
 		textField_1.setEnabled(false);
 		/**
@@ -191,7 +192,7 @@ public class MenuOtdelochnik {
 		frame.getContentPane().add(textField_1);
 
 		/**
-		 * Создаём экземляр класса label_1 класса JLabel
+		 * Создаём простой компонент label_1 класса JLabel
 		 */
 		JLabel label_1 = new JLabel("Свободного пространства в комнате(кв.м):");
 		/**
@@ -213,7 +214,7 @@ public class MenuOtdelochnik {
 		 */
 		textField_2 = new JTextField();
 		/**
-		 * Блокируем полностью компонент, не давая ничего выделять и изменять в нём
+		 * Запрещаем пользователю выделять и изменять содержимое в компоненте
 		 */
 		textField_2.setEnabled(false);
 		/**
