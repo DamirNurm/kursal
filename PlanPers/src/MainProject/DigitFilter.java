@@ -28,9 +28,9 @@ import javax.swing.text.PlainDocument;
 public class DigitFilter {
 	
 	/**
-	 * Метод TextFilter для ограничения вводимых символов
-	 * в поля ввода, который принимает на вход
-	 * два параметра TextField и length(длина строки).
+	 * Метод TextFilter, который принимает на вход
+	 * два параметра TextField и length(длина строки)
+	 * для ограничения вводимых символов в поле ввода.
 	 */
 	public static void TextFilter(JTextField TextField, int length) {
 		/**
