@@ -1,3 +1,6 @@
+/**
+* Устанавливаем принадлежность класса к пакету
+ */
 package MainProject;
 /**
  * Подключаем библиотеку для работы с графическим интерфейсом
@@ -21,7 +24,9 @@ import java.awt.event.ActionListener;
  * Объявляем public класс
  */
 public class MainMenu {
-
+	/**
+	* Для создания основного контейнера для приложения используем контейнер JFrame
+	*/
 	private JFrame frame;
 
 	/**
@@ -95,7 +100,7 @@ public class MainMenu {
 		 */
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		/**
-		 * Устанавлваем менеджер NullLayout для самостоятельного расположения элементов
+		 * Устанавливаем менеджер NullLayout для самостоятельного расположения элементов
 		 */
 		frame.getContentPane().setLayout(null);
 

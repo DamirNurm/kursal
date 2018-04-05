@@ -19,7 +19,8 @@ public class place {
 	public static float totalarea = 0;
 	public static float freearea = 0;
 	/**
-	 * Метод AreaCounter
+	 * Метод AreaCounter используется 
+	 * для подсчёта свободного места в помещении
 	 */
 	public static void AreaCounter() {
 		/**
@@ -62,7 +63,9 @@ public class place {
 		}
 	}
 	/**
-	 * Метод SetTotalArea
+	 * Метод SetTotalArea для занесения
+	 * в поле ввода значения всей площади
+	 * комнаты в форме "планировщик".
 	 */
 	public static void SetTotalArea() {
 		/**

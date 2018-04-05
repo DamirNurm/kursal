@@ -27,10 +27,12 @@ import java.awt.event.ActionEvent;
  * Объявляем public класс
  */
 public class MenuPlanirov {
-
+	/**
+	* Для создания основного контейнера для приложения используем контейнер JFrame
+	*/
 	JFrame frame;
 	/**
-	 * Объявляем приватные статические поля ввода JTextField.
+	 * Объявляем поля ввода JTextField.
 	 * textField - Поле для ввода значения всей площади комнаты.
 	 * textField_1 - Поле для ввода значения ширины объекта.
 	 * textField_2 - Поле для ввода значения длины объекта.
@@ -44,7 +46,7 @@ public class MenuPlanirov {
 	public static JTextField textField_4;
 	
 	/**
-	 * Запсукаем приложение
+	 * Запускаем приложение
 	 */
 	public static void main(String[] args) {
 		/**
@@ -113,7 +115,7 @@ public class MenuPlanirov {
 		 */
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		/**
-		 * Устанавлваем менеджер NullLayout для расположения элементов по координатам
+		 * Устанавливаем менеджер NullLayout для расположения элементов по координатам
 		 */
 		frame.getContentPane().setLayout(null);
 		
@@ -311,7 +313,7 @@ public class MenuPlanirov {
 
 		/**
 		 * Создаём простой компонент btnNewButton_3 класса JButton.
-		 * Эта кнопка при нажатии возвращает в гланое меню.
+		 * Эта кнопка при нажатии возвращает в главное меню.
 		 */
 		JButton btnNewButton_3 = new JButton("Выйти из режима");
 		/**
@@ -347,7 +349,7 @@ public class MenuPlanirov {
 
 		/**
 		 * Создаём простой компонент textField_3 класса JTextField.
-		 * В это поле заносится значение свобондого пространства в комнате.
+		 * В это поле заносится значение свободного пространства в комнате.
 		 */
 		textField_3 = new JTextField();
 		/**

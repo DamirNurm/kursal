@@ -20,7 +20,8 @@ import javax.swing.JOptionPane;
  */
 public class SaveFile {
 	/**
-	 * Метод SaveInFile для сохранения данных в файл
+	 * Метод SaveInFile для сохранения 
+	 * результатов расчёта в файл "Results.txt".
 	 */
 	public static void SaveInFile() {
 		/**
@@ -61,7 +62,7 @@ public class SaveFile {
 					"\nOccupies area: " + Objects.Obj[i].area);
 			}
 			/**
-			 * Завершаем работату с файлом и 
+			 * Завершаем работу с файлом и 
 			 * закрываем выходной поток. 
 			 */
 			writer.close();

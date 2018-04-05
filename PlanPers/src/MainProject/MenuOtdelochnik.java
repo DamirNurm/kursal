@@ -28,10 +28,12 @@ import java.awt.event.ActionListener;
  * Объявляем public класс
  */
 public class MenuOtdelochnik {
-
+	/**
+	* Для создания основного контейнера для приложения используем контейнер JFrame
+	*/
 	private JFrame frame;
 	/**
-	 * Объявляем приватные поля ввода JTextField
+	 * Объявляем поля ввода JTextField
 	 * textField - Заносится значение всей площади комнаты (кв.м) с формы "Планировщик"
 	 * textField_1 - принимает значение количества объектов (шт.) 
 	 * textField_2 - принимает значение Свободного места в комнате (кв.м) 
@@ -109,7 +111,7 @@ public class MenuOtdelochnik {
 		 */
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		/**
-		 * Устанавлваем менеджер NullLayout для расположения элементов по координатам
+		 * Устанавливаем менеджер NullLayout для расположения элементов по координатам
 		 */
 		frame.getContentPane().setLayout(null);
 
@@ -131,7 +133,7 @@ public class MenuOtdelochnik {
 		frame.getContentPane().add(label);
 
 		/**
-		 * Создаём экземляр класса lblNewLabel класса JLabel
+		 * Создаём экземпляр класса lblNewLabel класса JLabel
 		 */
 		JLabel lblNewLabel = new JLabel("Количество объектов в комнате(шт):");
 		/**
@@ -171,7 +173,7 @@ public class MenuOtdelochnik {
 
 		/**
 		 * Создаём простой компонент textField_1 класса JTextField 
-		 * В это поле заноситься количество объектов в комнате
+		 * В это поле заносится количество объектов в комнате
 		 */
 		textField_1 = new JTextField();
 		/**
@@ -232,7 +234,7 @@ public class MenuOtdelochnik {
 
 		/**
 		 * Создаём простой компонент btnNewButton класса JButton 
-		 * Кнопка при нажатии сохраненяет результаты расчётов в файл
+		 * Кнопка при нажатии сохраняет результаты расчётов в файл
 		 */
 		JButton btnNewButton = new JButton("Сохранить в файл");
 		/**

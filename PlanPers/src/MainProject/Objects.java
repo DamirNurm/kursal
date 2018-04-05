@@ -23,7 +23,7 @@ public class Objects {
 	public  float length = 0;
 	public  float area = 0;
 	/**
-	* Объявляем массив статических перенных для хранения параметров объекта
+	* Объявляем массив статических переменных для хранения параметров объекта
 	 */
 	public static   Objects[] Obj = new Objects[100];
 	
@@ -41,7 +41,7 @@ public class Objects {
 			 */
 		if (MenuPlanirov.textField_1.getText().length() != 0 && MenuPlanirov.textField_2.getText().length() != 0 && !MenuPlanirov.textField_2.getText().equals("0") && !MenuPlanirov.textField_1.getText().equals("0")) {
 			/**
-			 * Добавляем информацию, что количество объектов увеличислось
+			 * Добавляем информацию, что количество объектов увеличилось
 			 */
 			AmountObj.amount += 1;
 			/**
@@ -80,7 +80,7 @@ public class Objects {
 		catch (Exception ep) {
 			/**
 			 * Обрабатываем исключение типа Exception ep.
-			 * Уменьшеньшаем значение количества созданных 
+			 * Уменьшаем значение количества созданных 
 			 * объектов для исключения переполнения.
 			 */
 		AmountObj.amount -= 1;
@@ -107,6 +107,7 @@ public class Objects {
 		}
 	/**
 	 * Метод FillTextF4 для заполнения поля
+	 * в форме планировщик
 	 */
 	public static void FillTextF4() {
 		/**
